@@ -15,11 +15,15 @@ gem 'sqlite3'
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
 group :development do
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec-rails', '2.10.0'
+  gem 'annotate', 
+    :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+    :branch => 'rake_compatibility'
+
 end
 
 group :test do
-  gem 'rspec', '2.5.0'
+  gem 'rspec', '2.10.0'
   gem 'webrat', '0.7.1'
   gem 'spork'
 end
