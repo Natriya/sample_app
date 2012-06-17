@@ -1,18 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
-
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
-
-
-########
-
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
+gem 'gravatar_image_tag'
+
+gem 'jquery-rails'
+
+gem 'ZenTest'
+gem 'autotest-growl'
 
 group :development do
   gem 'rspec-rails', '2.10.0'
@@ -26,6 +22,7 @@ group :test do
   gem 'rspec', '2.10.0'
   gem 'webrat', '0.7.1'
   gem 'spork'
+  gem 'factory_girl_rails'
 end
 ########
 
@@ -41,7 +38,7 @@ end
 ##  gem 'uglifier', '>= 1.0.3'
 ##end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -57,8 +54,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-gem 'ZenTest'
-gem 'autotest-growl'
+
 
 
 
