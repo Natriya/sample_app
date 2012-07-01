@@ -10,11 +10,14 @@ gem 'jquery-rails'
 gem 'ZenTest'
 gem 'autotest-growl'
 
+gem 'will_paginate'
+
 group :development do
   gem 'rspec-rails', '2.10.0'
   gem 'annotate', 
     :git => 'git://github.com/jeremyolliver/annotate_models.git', 
     :branch => 'rake_compatibility'
+  gem 'faker'
 
 end
 
