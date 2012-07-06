@@ -1,7 +1,24 @@
-﻿<h1>Sample App</h1>
-<p>
-  C'est la page d'accueil de l'Application Exemple du
-  <a href="http://railstutorial.org/">Tutoriel Ruby on Rails</a>.
-</p>
+﻿<% if signed_in? %>
+   <table class="front" summary="Pour visiteur identifié"> 
+     <tr>
+         <td class="main">
+            <h1 class="micropost">Quoi de neuf ?</h1>
+            <%= render 'shared/micropost_form' %>
+            <%= render 'shared/feed' %>
+        </td>
+        <td class="sidebar round">
+            <%= render 'shared/user_info' %>
+            <%= render 'shared/stats' %>
+        </td>
+      </tr>
+    </table> 
+   </table>
+<% else %>
+    <h1>Sample App</h1>
+    <p>
+      C'est la page d'accueil de l'Application Exemple du
+      <a href="http://railstutorial.org/">Tutoriel Ruby on Rails</a>.
+    </p>
 
-<%= link_to "S'inscrire !", signup_path, :class => "signup_button round" %>
+    <%= link_to "S'inscrire !", signup_path, :class => "signup_button round" %>
+<% end %>
